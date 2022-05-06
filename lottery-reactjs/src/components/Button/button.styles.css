@@ -1,0 +1,12 @@
+button{
+    padding: 8px;
+    width: 330px;
+    border-style: none;
+    background-color: lightgreen;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: blueviolet;
+    color: white;
+}

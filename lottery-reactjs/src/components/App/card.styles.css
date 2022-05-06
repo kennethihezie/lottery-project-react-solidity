@@ -1,0 +1,21 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Actual card with shadow */
+.card {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 16px;
+  box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+}
+
+h2, h4{
+    text-align: center;
+}
