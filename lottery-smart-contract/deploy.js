@@ -4,10 +4,10 @@ const { abi, evm } = require('./compile')
 
 //first param is the account memonic
 //second param the link to the testnet or mainnet we want to deploy our contract to.
-const provider = new HDWalletProvider(
-    'table multiply tree blood base knife keen sea police shield furnace wise',
-    'https://rinkeby.infura.io/v3/c012c66a9a614b3eb2f378cb7fa1451f'
-)
+const memonicPhrase = '{REPLACE_WITH_WALLET_PHRASE}'
+const providerUrl = '{REPLACE_WITH_PROVIDER_URL}'
+
+const provider = new HDWalletProvider(memonicPhrase, providerUrl)
 
  //this instance of web3 here is completely for the rinkeby network
 const web3 = new Web3(provider)
