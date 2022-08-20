@@ -7,7 +7,7 @@ const { abi, evm } = require('./compile')
 const provider = new HDWalletProvider(
     'table multiply tree blood base knife keen sea police shield furnace wise',
     'https://rinkeby.infura.io/v3/c012c66a9a614b3eb2f378cb7fa1451f'
- )
+)
 
  //this instance of web3 here is completely for the rinkeby network
 const web3 = new Web3(provider)
@@ -21,11 +21,11 @@ const deploy = async () => {
           .deploy({ data: evm.bytecode.object })
           .send({ gas: '5000000', from: accounts[1] })
 
-          
-    console.log(abi);
-    console.log('Contracts deployed at: ' + result.options.address);
+              console.log('Contracts deployed at: ' + result.options.address);
     //To prevent a hanging deployment, add this code directly below.
     provider.engine.stop()
 }
+
+//deployed at 0xf1C0e6F92da08880eD966Ffa804C93C4DC608579
 
 deploy()

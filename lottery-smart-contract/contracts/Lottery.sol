@@ -23,7 +23,7 @@ contract Lottery {
         //here we making sure anyone entering the game pays atleast .01 ether. now remember .01 ether authomatically converts to wei
         require(msg.value > .01 ether);
         players.push(payable(msg.sender));
-        //solidity does have a random number generator
+        //solidity does not have a random number generator
     }
 
     //pick winner randomly

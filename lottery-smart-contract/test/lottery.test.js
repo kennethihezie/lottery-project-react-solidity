@@ -3,7 +3,7 @@ const assert = require('assert')
 const ganache = require('ganache-cli')
 const Web3 = require('web3')
 
-//A provider is a communication layer to some etherum or bsc or some other network network
+//A provider is a communication layer to some etherum or bsc or some other network
 //in the furture we can change the ganache to rinkeby
 const web3 = new Web3(ganache.provider())
 let accounts;
